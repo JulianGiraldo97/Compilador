@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff4d1877-15f5-46b9-bfbf-af775d817564" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Enum" />
+        <option value="FxmlFile" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zgoshq11nunOyWhPaGRIRvsyu0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="co.edu.uniquindio.compiladores.prueba.lexico" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TecnoSystem\IdeaProjects\Compilador\src\co\edu\uniquindio\compiladores\prueba\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.Aplicacion">
+    <configuration name="Aplicacion" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Compilador" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.compiladores.app.Aplicacion" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AplicacionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Compilador" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.compiladores.prueba.app.AplicacionKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.Aplicacion" />
+        <item itemvalue="Kotlin.AplicacionKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff4d1877-15f5-46b9-bfbf-af775d817564" name="Default Changelist" comment="" />
+      <created>1585270308646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585270308646</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1585280326699">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585280326699" />
+    <state x="462" y="36" width="500" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1585279585796">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="462" y="36" width="500" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585279585796" />
+    <state width="1323" height="84" key="GridCell.Tab.0.bottom" timestamp="1585283018263">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="84" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585283018263" />
+    <state width="1323" height="84" key="GridCell.Tab.0.center" timestamp="1585283018262">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="84" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585283018262" />
+    <state width="1323" height="84" key="GridCell.Tab.0.left" timestamp="1585283018262">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="84" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585283018262" />
+    <state width="1323" height="84" key="GridCell.Tab.0.right" timestamp="1585283018263">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="84" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585283018263" />
+    <state x="171" y="0" key="SettingsEditor" timestamp="1585279906345">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="171" y="0" key="SettingsEditor/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585279906345" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1585270733364">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585270733364" />
+    <state x="0" y="0" width="607" height="768" key="find.popup" timestamp="1585274678340">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" width="607" height="768" key="find.popup/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585274678340" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1585281555740">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585281555740" />
+  </component>
+</project>
