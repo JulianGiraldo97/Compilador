@@ -1,5 +1,6 @@
 package co.edu.uniquindio.compiladores.app
 
+import co.edu.uniquindio.compiladores.lexico.AnalizadorLexico
 import javafx.application.Application
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
@@ -24,7 +25,10 @@ class Aplicacion : Application() {
 
         @JvmStatic
         fun main(args: Array<String>){
-            launch( Aplicacion::class.java)
+           launch( Aplicacion::class.java)
+            //  val ana= AnalizadorLexico("&")
+          //ana.analizar()
+          //print(ana.listaTokens)
         }
 
     }
