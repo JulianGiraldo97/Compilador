@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4d1877-15f5-46b9-bfbf-af775d817564" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/app/Aplicacion$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/app/Aplicacion$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/app/Aplicacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/app/Aplicacion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/controladores/inicioControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/controladores/inicioControler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/Categoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/Categoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/app/Aplicacion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/app/Aplicacion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/controladores/inicioControler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/controladores/inicioControler.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/Categoria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/Categoria.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,34 +95,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1585280326699">
+    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1586114197565">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585280326699" />
+    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114197565" />
     <state x="462" y="36" width="500" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1585279585796">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="462" y="36" width="500" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585279585796" />
-    <state width="1323" height="86" key="GridCell.Tab.0.bottom" timestamp="1586106857458">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="84" key="GridCell.Tab.0.bottom" timestamp="1586114671130">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="84" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585283018263" />
-    <state width="1323" height="86" key="GridCell.Tab.0.center" timestamp="1586106857458">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="84" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114671130" />
+    <state width="1323" height="84" key="GridCell.Tab.0.center" timestamp="1586114671129">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="84" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585283018262" />
-    <state width="1323" height="86" key="GridCell.Tab.0.left" timestamp="1586106857458">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="84" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114671129" />
+    <state width="1323" height="84" key="GridCell.Tab.0.left" timestamp="1586114671129">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="84" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585283018262" />
-    <state width="1323" height="86" key="GridCell.Tab.0.right" timestamp="1586106857458">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="84" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114671129" />
+    <state width="1323" height="84" key="GridCell.Tab.0.right" timestamp="1586114671130">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="84" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585283018263" />
+    <state width="1323" height="84" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114671130" />
     <state x="171" y="0" key="SettingsEditor" timestamp="1585279906345">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
