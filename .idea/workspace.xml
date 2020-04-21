@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4d1877-15f5-46b9-bfbf-af775d817564" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/META-INF/Compilador.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/META-INF/Compilador.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/controladores/inicioControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/controladores/inicioControler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/inicio.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/inicio.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/app/Aplicacion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/app/Aplicacion.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/controladores/inicioControler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/controladores/inicioControler.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.kt" afterDir="false" />
     </list>
@@ -15,10 +20,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Enum" />
         <option value="FxmlFile" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -32,6 +37,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -48,7 +54,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.Aplicacion">
-    <configuration name="Aplicacion" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="Aplicacion" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Compilador" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -61,7 +67,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AplicacionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="AplicacionKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Compilador" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -74,9 +80,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="co.edu.uniquindio.compiladores.test.AppKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Compilador" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.compiladores.test.AppKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.Aplicacion" />
+        <item itemvalue="Kotlin.co.edu.uniquindio.compiladores.test.AppKt" />
         <item itemvalue="Kotlin.AplicacionKt" />
       </list>
     </recent_temporary>
@@ -95,34 +115,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1586114197565">
+    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1587494412388">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114197565" />
+    <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587494412388" />
+    <state x="363" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587479587001">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587479587001" />
     <state x="462" y="36" width="500" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1585279585796">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="462" y="36" width="500" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585279585796" />
-    <state width="1323" height="84" key="GridCell.Tab.0.bottom" timestamp="1586114671130">
+    <state width="1323" height="99" key="GridCell.Tab.0.bottom" timestamp="1587497748776">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="84" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114671130" />
-    <state width="1323" height="84" key="GridCell.Tab.0.center" timestamp="1586114671129">
+    <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587497748776" />
+    <state width="1323" height="99" key="GridCell.Tab.0.center" timestamp="1587497748776">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="84" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114671129" />
-    <state width="1323" height="84" key="GridCell.Tab.0.left" timestamp="1586114671129">
+    <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587497748776" />
+    <state width="1323" height="99" key="GridCell.Tab.0.left" timestamp="1587497748776">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="84" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114671129" />
-    <state width="1323" height="84" key="GridCell.Tab.0.right" timestamp="1586114671130">
+    <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587497748776" />
+    <state width="1323" height="99" key="GridCell.Tab.0.right" timestamp="1587497748776">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="84" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586114671130" />
+    <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587497748776" />
     <state x="171" y="0" key="SettingsEditor" timestamp="1585279906345">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -131,11 +155,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586109752234" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1586109587733">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587481538313">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="379" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586099354473" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586109587733" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587481538313" />
     <state x="0" y="0" width="607" height="768" key="find.popup" timestamp="1585274678340">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

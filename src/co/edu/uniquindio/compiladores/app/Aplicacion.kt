@@ -26,9 +26,7 @@ class Aplicacion : Application() {
         @JvmStatic
         fun main(args: Array<String>){
            launch( Aplicacion::class.java)
-            //  val ana= AnalizadorLexico("&")
-          //ana.analizar()
-          //print(ana.listaTokens)
+
         }
 
     }

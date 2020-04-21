@@ -92,6 +92,8 @@ class AnalizadorLexico(var codigoFuente:String) {
 
         palabrasReservadas.add("Detener"); // break
         palabrasReservadas.add("Omitir"); // continue
+
+        palabrasReservadas.add("fun"); //palabra reservada para funcion
     }
 
     /*

@@ -1,0 +1,25 @@
+unidad de compilacion
+<UnidadDeCompilacion> ::= <listaFunciones>
+----------------------------------------------------
+lista funciones
+<ListaFunciones> ::= <Funcion>[<ListaFunciones>]
+----------------------------------------------------
+funcion
+<Funcion>::= fun idMetodo <TipoRetorno> "("[<ListaParametros>]")""{"<listaSentencias>"}"
+ejemplo:
+fun nombre Entero(parametros){
+sentencias
+}
+-----------------------------------------------------
+tipo de retorno
+<TipoRetorno> ::= Entero|Real|Cadena|Caracter|Logico
+-----------------------------------------------------
+bloque sentencias
+<ListaSentencias>::="{"[<ListaSentencias>]"}"
+-----------------------------------------------------
+lista parametros
+<ListaArgumentos>::=<Argumento> [<ListaArgumentos>]
+-----------------------------------------------------
+parametro
+<Parametro>::= <TipoDato> identificador
+-----------------------------------------------------
