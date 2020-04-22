@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4d1877-15f5-46b9-bfbf-af775d817564" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/inicio.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/controladores/inicioControler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/controladores/inicioControler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Funcion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Funcion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Parametro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Parametro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Sentencia.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Sentencia.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/UnidadDeCompilacion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/UnidadDeCompilacion.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../File-Server-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -119,26 +126,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="462" y="36" width="500" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585279585796" />
-    <state width="1323" height="99" key="GridCell.Tab.0.bottom" timestamp="1587510085651">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1587510379940">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587510379940" />
+    <state width="1323" height="48" key="GridCell.Tab.0.bottom" timestamp="1587522526234">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587510085651" />
-    <state width="1323" height="99" key="GridCell.Tab.0.center" timestamp="1587510085651">
+    <state width="1323" height="48" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587522526234" />
+    <state width="1323" height="48" key="GridCell.Tab.0.center" timestamp="1587522526234">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587510085651" />
-    <state width="1323" height="99" key="GridCell.Tab.0.left" timestamp="1587510085651">
+    <state width="1323" height="48" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587522526234" />
+    <state width="1323" height="48" key="GridCell.Tab.0.left" timestamp="1587522526234">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587510085651" />
-    <state width="1323" height="99" key="GridCell.Tab.0.right" timestamp="1587510085651">
+    <state width="1323" height="48" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587522526234" />
+    <state width="1323" height="48" key="GridCell.Tab.0.right" timestamp="1587522526234">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587510085651" />
+    <state width="1323" height="48" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587522526234" />
     <state x="171" y="0" key="SettingsEditor" timestamp="1585279906345">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -147,11 +158,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586109752234" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587509877502">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587518257995">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="379" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586099354473" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587509877502" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587518257995" />
     <state x="0" y="0" width="607" height="768" key="find.popup" timestamp="1585274678340">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

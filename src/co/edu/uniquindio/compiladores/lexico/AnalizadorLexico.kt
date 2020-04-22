@@ -6,6 +6,7 @@ class AnalizadorLexico(var codigoFuente:String) {
 
     var caracterActual = codigoFuente[0]
     var listaTokens = ArrayList<Token>()
+    var listaErrores = ArrayList<Error>()
     var posicionActual = 0
     var finCodigo = 0.toChar()
     var filaActual = 0

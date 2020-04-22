@@ -7,14 +7,12 @@ import javafx.collections.FXCollections
 import javafx.event.ActionEvent
 import javafx.fxml.FXML
 import javafx.fxml.Initializable
-import javafx.scene.control.TableColumn
-import javafx.scene.control.TableView
-import javafx.scene.control.TextArea
 import javafx.scene.control.cell.PropertyValueFactory
 import java.net.URL
 import java.util.*
 import co.edu.uniquindio.compiladores.lexico.Error
 import co.edu.uniquindio.compiladores.sintactico.AnalizadorSintactico
+import javafx.scene.control.*
 import kotlin.system.exitProcess
 
 
@@ -31,8 +29,10 @@ class inicioControler : Initializable {
     @FXML lateinit var columnaColumna:TableColumn<Token, Int>
 
     @FXML lateinit var mensajeError:TableColumn<Error, String>
-    @FXML lateinit var filaError:TableColumn<Error, String>
-    @FXML lateinit var columnaError:TableColumn<Error, String>
+    @FXML lateinit var filaError:TableColumn<Error, Int>
+    @FXML lateinit var columnaError:TableColumn<Error, Int>
+
+    @FXML lateinit var arbolVisual:TreeView<String>
 
 
     override fun initialize(location: URL?, resources: ResourceBundle?) {
@@ -47,19 +47,24 @@ class inicioControler : Initializable {
 
 
     @FXML
-    fun analizarCodigo( e : ActionEvent){
+    fun analizarCodigo( e : ActionEvent) {
 
-        if (codigoFuente.length > 0){
+        if (codigoFuente.length > 0) {
 
-        val lexico = AnalizadorLexico(codigoFuente.text)
+            val lexico = AnalizadorLexico(codigoFuente.text)
             lexico.analizar()
-
             val sintaxis = AnalizadorSintactico(lexico.listaTokens)
+            val uc = sintaxis.esUnidadDeCompilacion()
             tablaErrores.items = FXCollections.observableArrayList(sintaxis.listaErrores)
-
             tablaTokens.items = FXCollections.observableArrayList(lexico.listaTokens)
+
+
+            if (uc != null) {
+                arbolVisual.root = uc.getArbolVisual()
+            }
+
+
         }
+
     }
-
-
 }
