@@ -5,7 +5,7 @@ lista funciones
 <ListaFunciones> ::= <Funcion>[<ListaFunciones>]
 ----------------------------------------------------
 funcion
-<Funcion>::= fun idMetodo <TipoRetorno> "("[<ListaParametros>]")""{"<listaSentencias>"}"
+<Funcion>::= fun idMetodo <TipoRetorno> "("[<ListaParametros>]")""{"<BloqueSentencias>"}"
 ejemplo:
 fun nombre Entero(parametros){
 sentencias
@@ -15,7 +15,10 @@ tipo de retorno
 <TipoRetorno> ::= Entero|Real|Cadena|Caracter|Logico
 -----------------------------------------------------
 bloque sentencias
-<ListaSentencias>::="{"[<ListaSentencias>]"}"
+<BloqueSentencias>::=[<ListaSentencias>]
+-----------------------------------------------------
+lista sentencias
+<ListaSentencias>::=<Sentencia>[<ListaSentencias>]     
 -----------------------------------------------------
 lista parametros
 <ListaArgumentos>::=<Argumento> [<ListaArgumentos>]
@@ -23,3 +26,73 @@ lista parametros
 parametro
 <Parametro>::= <TipoDato> identificador
 -----------------------------------------------------
+Declaracion campo
+<DeclaracionCampo> ::= <tipoDato> identificador ";"
+----------------------------------------------------
+Termino
+<Termino>::=Entero|Real|Identificador|CadenaCaracteres|Decimal|Caracter    
+----------------------------------------------------
+Retorno
+<Retorno>::= Retornar idVariable";"
+----------------------------------------------------
+Invocar metodo
+<InvocacionMetodo>::= Identificador "("[<ListaArgumentos>]")"";"
+---------------------------------------------------------
+Argumento
+<Argumento>::= <Termino>
+---------------------------------------------------------
+lista argumentos
+<ListaArgumentos>::=<Argumento> [<ListaArgumentos>]
+---------------------------------------------------------
+condicional
+<Condicional>::= SiSeCumple "("<ExpresionLogica ")" "{"<ListaSentencias>"}" [ DeLoContrario "{"<ListaSentencias>"}"]
+---------------------------------------------------------
+imprimir
+<Imprimir>::= Imprimir "(" Mensaje ")" ";"
+---------------------------------------------------------
+lectura
+<Lectura>::= Leer "(" Mensaje ")" ";"
+---------------------------------------------------------
+asignacion variable ***(falta)****
+<AsignacionVariable>::= identificador operadorAsignacion <Expresion> ";"
+---------------------------------------------------------
+sentencias  ***(falta)***
+<Sentencia>::=<Condicional>|<Ciclo>|[<Retorno>]|<DeclaracionCampo>|<AsignacionVariable>|<Impresion>|<Lectura>|<InvocacionMetodo>
+--------------------------------------------------------
+tipo dato
+<TipoDato> ::= Entero|Real|Cadena|Caracter|Logico|NoRetorno
+--------------------------------------------------------
+unidad de compialcion
+<UnidadDeCompilacion> ::= <listaFunciones>
+--------------------------------------------------------
+ciclo
+<Ciclo>::= Mientras "("<ExpresionCondicion ")" "{"<ListaSentencias"}"
+--------------------------------------------------------
+valor numerico
+<ValorNumerico>::= [<Signo>] decimal | [<Signo>] entero | [<Signo>] identificador
+--------------------------------------------------------
+expresion aritmetica
+<ExpAritmetica> ::= "("<ExpAritmetica>")" [operadorAritmetico <ExpAritmetica>] | <Termino> [operadorAritmetico <ExpAritmetica>]
+-----------------------------------------------------------
+declaracion arreglo
+<DeclaracionArreglo> ::= Lista <tipoDato> identificador "{" "}" ";"
+------------------------------------------------------------
+asignacion arreglo
+<AsignacionArreglo>::= Agregar identificador "=" "{" <ListaArgumentos> "}" ";"
+------------------------------------------------------------
+expresion logica
+<ExpresionLogica> ::= operadorNegacion <ExpresionLogica> [operadorLogico <ExpresionLogica>] | <Termino>  [OperadorLogico <ExpresionLogica>] |
+  <ExpresionRelacional> [OperadorLogico <ExpresionLogica>] 
+------------------------------------------------------------
+expresion relacional
+<ExpresionRelacional>::=<ExprecionAritmetica> OperadorRelacional<ExpresionAritmetica>
+------------------------------------------------------------
+expresion cadena
+<ExpresionCadena> ::= Cadena ["+" <ExpresionCadena>]
+-----------------------------------------------------------
+expresion
+<Expresion>::=<ExpresionAritmetica>|<ExpresionLogica>|<ExpresionRelacional>|<ExpresionCadena>
+----------------------------------------------------------
+expresion condicion
+<ExpresionCondicion>::= <ExpresionRelacional> [OperadorLogico <ExpresionLogica>] | <ExpresionLogica>
+

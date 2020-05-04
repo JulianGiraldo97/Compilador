@@ -3,13 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4d1877-15f5-46b9-bfbf-af775d817564" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/inicio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/inicio.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bnfs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bnfs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/app/Aplicacion$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/app/Aplicacion$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/app/Aplicacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/app/Aplicacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/controladores/inicioControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/controladores/inicioControler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/Categoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/lexico/Categoria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/sintactico/AnalizadorSintactico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/sintactico/AnalizadorSintactico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/sintactico/Funcion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/sintactico/Funcion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/sintactico/Parametro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/sintactico/Parametro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/sintactico/Sentencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compilador/co/edu/uniquindio/compiladores/sintactico/Sentencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/app/Aplicacion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/app/Aplicacion.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/controladores/inicioControler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/controladores/inicioControler.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/AnalizadorLexico.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/Categoria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/lexico/Categoria.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/AnalizadorSintactico.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/AnalizadorSintactico.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Funcion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Funcion.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Parametro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Parametro.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Sentencia.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/Sentencia.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/UnidadDeCompilacion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uniquindio/compiladores/sintactico/UnidadDeCompilacion.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +51,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../File-Server-master" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -114,6 +126,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="42" key="#Project_Structure" timestamp="1588550811156">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="42" key="#Project_Structure/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1588550811156" />
     <state x="472" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1587494412388">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -126,30 +142,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="462" y="36" width="500" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585279585796" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1587510379940">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1588550806490">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587510379940" />
-    <state width="1323" height="48" key="GridCell.Tab.0.bottom" timestamp="1587522526234">
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1588550806490" />
+    <state width="1323" height="48" key="GridCell.Tab.0.bottom" timestamp="1588550943926">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="48" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587522526234" />
-    <state width="1323" height="48" key="GridCell.Tab.0.center" timestamp="1587522526234">
+    <state width="1323" height="48" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1588550943926" />
+    <state width="1323" height="48" key="GridCell.Tab.0.center" timestamp="1588550943926">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="48" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587522526234" />
-    <state width="1323" height="48" key="GridCell.Tab.0.left" timestamp="1587522526234">
+    <state width="1323" height="48" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1588550943926" />
+    <state width="1323" height="48" key="GridCell.Tab.0.left" timestamp="1588550943926">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="48" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587522526234" />
-    <state width="1323" height="48" key="GridCell.Tab.0.right" timestamp="1587522526234">
+    <state width="1323" height="48" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1588550943926" />
+    <state width="1323" height="48" key="GridCell.Tab.0.right" timestamp="1588550943926">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="86" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586106857458" />
-    <state width="1323" height="48" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587522526234" />
+    <state width="1323" height="48" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1588550943926" />
     <state x="171" y="0" key="SettingsEditor" timestamp="1585279906345">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -158,15 +174,15 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1586109752234" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587518257995">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1588550433485">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="379" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586099354473" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1587518257995" />
-    <state x="0" y="0" width="607" height="768" key="find.popup" timestamp="1585274678340">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1588550433485" />
+    <state x="0" y="0" width="607" height="768" key="find.popup" timestamp="1588550749900">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="0" y="0" width="607" height="768" key="find.popup/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1585274678340" />
+    <state x="0" y="0" width="607" height="768" key="find.popup/0.0.1366.768/1366.0.1366.768@0.0.1366.768" timestamp="1588550749900" />
     <state x="65" y="0" key="new project wizard" timestamp="1585694282136">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

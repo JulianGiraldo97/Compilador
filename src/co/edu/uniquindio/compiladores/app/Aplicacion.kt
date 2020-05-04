@@ -1,6 +1,7 @@
 package co.edu.uniquindio.compiladores.app
 
 import co.edu.uniquindio.compiladores.lexico.AnalizadorLexico
+import co.edu.uniquindio.compiladores.sintactico.AnalizadorSintactico
 import javafx.application.Application
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
@@ -26,6 +27,15 @@ class Aplicacion : Application() {
         @JvmStatic
         fun main(args: Array<String>){
            launch( Aplicacion::class.java)
+
+           // val lex= AnalizadorLexico("fun nombre Entero(Entero a , Entero b){Entero a;}")
+       //    lex.analizar()
+
+
+          // val sin= AnalizadorSintactico(lex.listaTokens)
+            //print(sin.esUnidadDeCompilacion())
+           //print(sin.listaErrores)
+
 
         }
 

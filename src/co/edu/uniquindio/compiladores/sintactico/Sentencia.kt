@@ -2,10 +2,10 @@ package co.edu.uniquindio.compiladores.sintactico
 
 import javafx.scene.control.TreeItem
 
-class Sentencia {
+open class Sentencia {
 
 
-    fun getArbolVisual():TreeItem<String>{
+    open fun getArbolVisual():TreeItem<String>{
         return TreeItem("Sentencia")
 
     }

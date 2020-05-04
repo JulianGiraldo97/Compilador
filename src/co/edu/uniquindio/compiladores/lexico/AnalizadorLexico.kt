@@ -1,5 +1,6 @@
 package co.edu.uniquindio.compiladores.lexico
 
+import com.sun.org.apache.xpath.internal.operations.Bool
 import org.omg.PortableInterceptor.ObjectReferenceTemplate
 
 class AnalizadorLexico(var codigoFuente:String) {
@@ -56,6 +57,8 @@ class AnalizadorLexico(var codigoFuente:String) {
             if (esDosPuntos()) continue
             if (esCorcheteDerecho()) continue
             if (esCorcheteIzquierdo()) continue
+            if (esInvocacion()) continue
+            if (esOperadorNegacion()) continue
 
 
             almacenarToken(""+caracterActual,
@@ -64,37 +67,51 @@ class AnalizadorLexico(var codigoFuente:String) {
     }
     }
 
+
+    fun esOperadorNegacion():Boolean{
+var lexema=""
+        var filaInicial= filaActual
+        var columnainicial=columnaActual
+        if(caracterActual=='!'){
+            lexema+=caracterActual
+            obtenerSiguienteCatacter()
+            almacenarToken(lexema,Categoria.OPERADOR_NEGACION,filaInicial,columnaActual)
+            return true
+        }
+        return false
+    }
     /*
     llena la lista con las palabras reservadas
      */
     fun llenarPalabrasReservadas(){
-        palabrasReservadas.add("Fn");
-        palabrasReservadas.add("Mientras");
+
+        palabrasReservadas.add("fun"); //palabra reservada para funcion
         palabrasReservadas.add("Entero");
         palabrasReservadas.add("Real");
         palabrasReservadas.add("Cadena");
         palabrasReservadas.add("Caracter");
-        palabrasReservadas.add("Logico");
-        palabrasReservadas.add("Verdadero");
         palabrasReservadas.add("NoRetorno");
-
-        palabrasReservadas.add("SiSeCumple");
-        palabrasReservadas.add("DeLoContrario");
-        palabrasReservadas.add("Verdadero");
-        palabrasReservadas.add("Falso");
-
+        palabrasReservadas.add("Leer");
         palabrasReservadas.add("Retornar");
         palabrasReservadas.add("Imprimir");
-        palabrasReservadas.add("ImprimirError");
-        palabrasReservadas.add("Leer");
+        palabrasReservadas.add("SiSeCumple");
+        palabrasReservadas.add("DeLoContrario");
+        palabrasReservadas.add("Mientras");
+        palabrasReservadas.add("Logico");
+        palabrasReservadas.add("Verdadero");
+        palabrasReservadas.add("Falso");
+        palabrasReservadas.add("Lista")
+        palabrasReservadas.add("Agregar")
 
+
+
+        palabrasReservadas.add("Fn");
         palabrasReservadas.add("Intentar"); // try
         palabrasReservadas.add("NoSeLogro"); // si no se se ejecuta el try
-
         palabrasReservadas.add("Detener"); // break
         palabrasReservadas.add("Omitir"); // continue
 
-        palabrasReservadas.add("fun"); //palabra reservada para funcion
+
     }
 
     /*
@@ -707,6 +724,23 @@ return false
 return false
 
     }
+
+    fun esInvocacion():Boolean{
+    var lexema=""
+        var filaInicial= filaActual
+        var columnaInicial= columnaActual
+        var posicionInicial= posicionActual
+
+        if(caracterActual=='¬'){
+            lexema+=caracterActual
+            obtenerSiguienteCatacter()
+            almacenarToken(lexema,Categoria.CARACTER_INVOCACION,filaInicial,columnaInicial)
+            return true
+        }
+return false
+    }
+
+
 fun esReal():Boolean{
 
     if(!caracterActual.isDigit() && caracterActual == '.'){

@@ -40,7 +40,7 @@ class inicioControler : Initializable {
         columnaCategoria.cellValueFactory = PropertyValueFactory("categoria")
         columnaFila.cellValueFactory = PropertyValueFactory("fila")
         columnaColumna.cellValueFactory = PropertyValueFactory("columna")
-        mensajeError.cellValueFactory = PropertyValueFactory("Mensaje")
+        mensajeError.cellValueFactory = PropertyValueFactory("error")
         filaError.cellValueFactory = PropertyValueFactory("Fila")
         columnaError.cellValueFactory = PropertyValueFactory("Columna")
     }
