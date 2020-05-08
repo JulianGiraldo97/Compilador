@@ -253,13 +253,19 @@ class AnalizadorSintactico (var listaTokens:ArrayList<Token>){
     fun esCondicional():Condicional?{
         if(tokenActual.categoria==Categoria.PALABRA_RESERVADA && tokenActual.lexema=="SiSeCumple"){
             obtenerSiquienteToken()
-            if(tokenActual.categoria==Categoria.PARENTECIS_IZQUIERDO){
+            if(tokenActual.categoria==Categoria.PARENTECIS_IZQUIERDO) {
                 obtenerSiquienteToken()
+            }else {
+                reportarError("Falta parentesis izquierdo")
+            }
                 var expresion=esExpresionCondicion()
                 if(expresion!=null){
 
-                    if(tokenActual.categoria==Categoria.PARENTECIS_DERECHO){
+                    if(tokenActual.categoria==Categoria.PARENTECIS_DERECHO) {
                         obtenerSiquienteToken()
+                    }else {
+                        reportarError("Falta parentesis derecho")
+                    }
                         if(tokenActual.categoria==Categoria.LLAVE_IZQUIERDA){
 
                             obtenerSiquienteToken()
@@ -307,15 +313,11 @@ class AnalizadorSintactico (var listaTokens:ArrayList<Token>){
                         }else{
                             reportarError("Falta la llave izquierda")
                         }
-                    }else{
-                        reportarError("Falta parentesis derecho")
-                    }
+
                 }else{
                     reportarError("Error en la expresion logica")
                 }
-            }else{
-                reportarError("Falta parentesis izquierdo")
-            }
+
         }
         return null
     }
@@ -462,6 +464,7 @@ class AnalizadorSintactico (var listaTokens:ArrayList<Token>){
                     obtenerSiquienteToken()
                     if (tokenActual.categoria == Categoria.LLAVE_IZQUIERDA) {
                         obtenerSiquienteToken()
+
                         if (tokenActual.categoria == Categoria.LLAVE_DERECHA) {
                             obtenerSiquienteToken()
                             if (tokenActual.categoria == Categoria.TERMINAL) {
@@ -681,25 +684,27 @@ class AnalizadorSintactico (var listaTokens:ArrayList<Token>){
                     obtenerSiquienteToken()
                     if(tokenActual.categoria==Categoria.LLAVE_IZQUIERDA) {
                         obtenerSiquienteToken()
+                    }else{
+                        reportarError("Falta la llave izquierda")
+                    }
                         var argumentos = esListaArgumentos()
                         if (argumentos != null) {
                             if (tokenActual.categoria==Categoria.LLAVE_DERECHA) {
                                 obtenerSiquienteToken()
+                            }else{
+                                reportarError("Falta el la llave derecha")
+                            }
                                 if (tokenActual.categoria == Categoria.TERMINAL) {
                                     obtenerSiquienteToken()
                                     return AsignacionArreglo(nombre, argumentos)
                                 }else{
                                     reportarError("Falta el final de la sentencia")
                                 }
-                            }else{
-                                reportarError("Falta el la llave derecha")
-                            }
+
                         }else{
                             reportarError("Faltan los argumento del arreglo")
                         }
-                    }else{
-                        reportarError("Falta la llave izquierda")
-                    }
+
                 }else{
                     reportarError("Falta el operador de asignacion")
                 }
@@ -833,27 +838,29 @@ class AnalizadorSintactico (var listaTokens:ArrayList<Token>){
             obtenerSiquienteToken()
             if(tokenActual.categoria==Categoria.PARENTECIS_IZQUIERDO){
                 obtenerSiquienteToken()
-                if(tokenActual.categoria==Categoria.IDENTIFICADOR){
-                    var nombre=tokenActual
-                    obtenerSiquienteToken()
-                    if(tokenActual.categoria==Categoria.PARENTECIS_DERECHO){
-                        obtenerSiquienteToken()
-                        if(tokenActual.categoria==Categoria.TERMINAL){
-                            obtenerSiquienteToken()
-                            return Lectura(nombre)
-                        }else{
-                            reportarError("Falta el final de la sentencia")
-                        }
-
-                    }else{
-                        reportarError("Falto parentesis derecho")
-                    }
-                }else{
-                    reportarError("Falto el elemento a leer")
-                }
             }else{
                 reportarError("Falto parentesis izquierdo")
             }
+            if(tokenActual.categoria==Categoria.IDENTIFICADOR){
+                var nombre=tokenActual
+                obtenerSiquienteToken()
+                if(tokenActual.categoria==Categoria.PARENTECIS_DERECHO){
+                    obtenerSiquienteToken()
+                }else{
+                    reportarError("Falto parentesis derecho")
+                }
+                if(tokenActual.categoria==Categoria.TERMINAL){
+                    obtenerSiquienteToken()
+                    return Lectura(nombre)
+                }else{
+                    reportarError("Falta el final de la sentencia")
+                }
+
+
+            }else{
+                reportarError("Falto el elemento a leer")
+            }
+
         }
         return null
     }
@@ -866,27 +873,29 @@ class AnalizadorSintactico (var listaTokens:ArrayList<Token>){
             obtenerSiquienteToken()
             if(tokenActual.categoria==Categoria.PARENTECIS_IZQUIERDO){
                 obtenerSiquienteToken()
-                if(tokenActual.categoria==Categoria.IDENTIFICADOR){
-                    var nombre=tokenActual
-                    obtenerSiquienteToken()
-                    if(tokenActual.categoria==Categoria.PARENTECIS_DERECHO){
-                        obtenerSiquienteToken()
-                        if(tokenActual.categoria==Categoria.TERMINAL){
-                            obtenerSiquienteToken()
-                            return Impresion(nombre)
-                        }else{
-                            reportarError("Falta el final de la sentencia")
-                        }
-
-                    }else{
-                        reportarError("Falto parentesis derecho")
-                    }
-                }else{
-                    reportarError("Falto el elemento a leer")
-                }
             }else{
                 reportarError("Falto parentesis izquierdo")
             }
+            if(tokenActual.categoria==Categoria.IDENTIFICADOR){
+                var nombre=tokenActual
+                obtenerSiquienteToken()
+                if(tokenActual.categoria==Categoria.PARENTECIS_DERECHO){
+                    obtenerSiquienteToken()
+                }else{
+                    reportarError("Falto parentesis derecho")
+                }
+                if(tokenActual.categoria==Categoria.TERMINAL){
+                    obtenerSiquienteToken()
+                    return Impresion(nombre)
+                }else{
+                    reportarError("Falta el final de la sentencia")
+                }
+
+
+            }else{
+                reportarError("Falto el elemento a leer")
+            }
+
         }
         return null
     }
@@ -898,40 +907,42 @@ class AnalizadorSintactico (var listaTokens:ArrayList<Token>){
             obtenerSiquienteToken()
             if(tokenActual.categoria==Categoria.PARENTECIS_IZQUIERDO){
                 obtenerSiquienteToken()
-
-                var expresion=esExpresionCondicion()
-
-                if(expresion!=null){
-
-                    if(tokenActual.categoria==Categoria.PARENTECIS_DERECHO){
-                        obtenerSiquienteToken()
-                        if (tokenActual.categoria==Categoria.LLAVE_IZQUIERDA){
-                            obtenerSiquienteToken()
-                            var sentencia=esBloqueSentencias()
-                            if (sentencia.size>0){
-                                if(tokenActual.categoria==Categoria.LLAVE_DERECHA){
-                                    return Ciclo(expresion,sentencia)
-
-                                }
-                                else{
-                                    reportarError("Falta llave derecha")
-                                }
-                            }else{
-                                reportarError("Faltan las sentencias en el ciclo")
-                            }
-                        }else{
-                            reportarError("Falta llave izquierda")
-                        }
-                    }else{
-                        reportarError("Falta parentesis derecho")
-                    }
-
-                }else{
-                    reportarError("Error en la expresion")
-                }
             }else{
                 reportarError("Falta parentesis izquierdo")
             }
+
+            var expresion=esExpresionCondicion()
+
+            if(expresion!=null){
+
+                if(tokenActual.categoria==Categoria.PARENTECIS_DERECHO){
+                    obtenerSiquienteToken()
+                }else{
+                    reportarError("Falta parentesis derecho")
+                }
+                if (tokenActual.categoria==Categoria.LLAVE_IZQUIERDA){
+                    obtenerSiquienteToken()
+                }else{
+                    reportarError("Falta llave izquierda")
+                }
+                var sentencia=esBloqueSentencias()
+                if (sentencia.size>0){
+                    if(tokenActual.categoria==Categoria.LLAVE_DERECHA){
+                        return Ciclo(expresion,sentencia)
+
+                    }
+                    else{
+                        reportarError("Falta llave derecha")
+                    }
+                }else {
+                    reportarError("Faltan las sentencias en el ciclo")
+                }
+
+
+            }else{
+                reportarError("Error en la expresion")
+            }
+
         }
 
         return null
