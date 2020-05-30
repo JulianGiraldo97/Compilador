@@ -33,7 +33,7 @@ Termino
 <Termino>::=Entero|Real|Identificador|CadenaCaracteres|Decimal|Caracter    
 ----------------------------------------------------
 Retorno
-<Retorno>::= Retornar idVariable";"
+<Retorno>::= Retornar <Expresion>";"
 ----------------------------------------------------
 Invocar metodo
 <InvocacionMetodo>::= Identificador "("[<ListaArgumentos>]")"";"
@@ -48,7 +48,7 @@ condicional
 <Condicional>::= SiSeCumple "("<ExpresionLogica ")" "{"<ListaSentencias>"}" [ DeLoContrario "{"<ListaSentencias>"}"]
 ---------------------------------------------------------
 imprimir
-<Imprimir>::= Imprimir "(" Mensaje ")" ";"
+<Imprimir>::= Imprimir "(" <Expresion> ")" ";"
 ---------------------------------------------------------
 lectura
 <Lectura>::= Leer "(" Mensaje ")" ";"
@@ -74,12 +74,6 @@ valor numerico
 expresion aritmetica
 <ExpAritmetica> ::= "("<ExpAritmetica>")" [operadorAritmetico <ExpAritmetica>] | <Termino> [operadorAritmetico <ExpAritmetica>]
 -----------------------------------------------------------
-declaracion arreglo
-<DeclaracionArreglo> ::= Lista <tipoDato> identificador "{" "}" ";"
-------------------------------------------------------------
-asignacion arreglo
-<AsignacionArreglo>::= Agregar identificador "=" "{" <ListaArgumentos> "}" ";"
-------------------------------------------------------------
 expresion logica
 <ExpresionLogica> ::= operadorNegacion <ExpresionLogica> [operadorLogico <ExpresionLogica>] | <Termino>  [OperadorLogico <ExpresionLogica>] |
   <ExpresionRelacional> [OperadorLogico <ExpresionLogica>] 
@@ -95,4 +89,6 @@ expresion
 ----------------------------------------------------------
 expresion condicion
 <ExpresionCondicion>::= <ExpresionRelacional> [OperadorLogico <ExpresionLogica>] | <ExpresionLogica>
+----------------------------------------------------------
+ <Arreglo> ::= Lista <tipoDato> identificador "{" [ <listaArgumentos> ] "}"";"
 

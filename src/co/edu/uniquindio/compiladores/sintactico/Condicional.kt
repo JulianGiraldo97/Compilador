@@ -1,5 +1,8 @@
 package co.edu.uniquindio.compiladores.sintactico
 
+import co.edu.uniquindio.compiladores.lexico.Error
+import co.edu.uniquindio.compiladores.semantica.Simbolo
+import co.edu.uniquindio.compiladores.semantica.TablaSimbolos
 import javafx.scene.control.TreeItem
 
 class Condicional(var expresion:Expresion, var listaSentencias:ArrayList<Sentencia>,var sentenciaElse:ArrayList<Sentencia>?): Sentencia() {
@@ -30,5 +33,45 @@ class Condicional(var expresion:Expresion, var listaSentencias:ArrayList<Sentenc
             raiz.children.add(raizFalsa)
         }
         return raiz
+    }
+
+    override fun llenarTablaSimbolos(tablaSimbolos: TablaSimbolos, listaErrores: ArrayList<Error>, ambito: String) {
+        for (s in listaSentencias){
+s.llenarTablaSimbolos(tablaSimbolos,listaErrores,ambito)
+        }
+        if (sentenciaElse!=null){
+            for (s in sentenciaElse!!){
+                s.llenarTablaSimbolos(tablaSimbolos,listaErrores,ambito)
+            }
+        }
+    }
+
+    override fun analizarSemantica(tablaSimbolos: TablaSimbolos, listaErrores: ArrayList<Error>, simbolo: Simbolo) {
+        if (expresion!=null) {
+            expresion.analizarSemantica(tablaSimbolos, listaErrores, simbolo)
+        }
+        for (s in listaSentencias){
+            s.analizarSemantica(tablaSimbolos,listaErrores,simbolo)
+        }
+        if (sentenciaElse!=null) {
+            for (s in sentenciaElse!!) {
+                s.analizarSemantica(tablaSimbolos, listaErrores, simbolo)
+            }
+        }
+    }
+    override fun getJavaCode():String{
+        var codigo="if("+expresion.getJavaCode()+"){"
+        for(s in listaSentencias){
+            codigo+=s.getJavaCode()
+        }
+        codigo+="}"
+        if(sentenciaElse!=null){
+            codigo+="else{"
+            for(s in sentenciaElse!!){
+                codigo+=s.getJavaCode()
+            }
+            codigo+="}"
+        }
+        return codigo
     }
 }

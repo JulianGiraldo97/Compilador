@@ -1,5 +1,7 @@
 package co.edu.uniquindio.compiladores.sintactico
+import co.edu.uniquindio.compiladores.lexico.Error
 import co.edu.uniquindio.compiladores.lexico.Token
+import co.edu.uniquindio.compiladores.semantica.TablaSimbolos
 import javafx.scene.control.TreeItem
 
 class ExpresionCadena():Expresion() {
@@ -19,7 +21,7 @@ class ExpresionCadena():Expresion() {
     override fun toString(): String {
         return "ExpresionCadena(exp=$exp, cadena=$cadena)"
     }
-    override open fun getArbolVisual(): TreeItem<String> {
+    override fun getArbolVisual(): TreeItem<String> {
 
         var raiz= TreeItem("Expresion Cadena")
 
@@ -35,6 +37,17 @@ class ExpresionCadena():Expresion() {
 
 
         return raiz
+    }
+    override fun obtenerTipo(tablaSimbolos: TablaSimbolos, ambito:String,listaErrores: ArrayList<Error>):String{
+        return "Cadena"
+    }
+
+    override fun getJavaCode(): String {
+        var codigo=cadena!!.getJavaCode()
+        if(exp!=null){
+            codigo+="+"+exp!!.getJavaCode()
+        }
+        return codigo
     }
 
 }

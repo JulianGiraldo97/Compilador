@@ -2,6 +2,7 @@ package co.edu.uniquindio.compiladores.lexico
 
 enum class Categoria {
     ENTERO,
+    LOGICO,
     DECIMAL,
     IDENTIFICADOR,
     OPERADOR_ARITMETICO,

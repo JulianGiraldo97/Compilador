@@ -37,7 +37,6 @@ class AnalizadorLexico(var codigoFuente:String) {
             if (esEntero()) continue
             if (esIdentificador()) continue
             if (esDecimal()) continue
-            if (esReal()) continue
             if (esParentesisIzquierdo()) continue
             if (esParentesisDerecho()) continue
             if (esLLaveIzquierda()) continue
@@ -88,6 +87,7 @@ var lexema=""
         palabrasReservadas.add("fun"); //palabra reservada para funcion
         palabrasReservadas.add("Entero");
         palabrasReservadas.add("Real");
+        palabrasReservadas.add("Decimal");
         palabrasReservadas.add("Cadena");
         palabrasReservadas.add("Caracter");
         palabrasReservadas.add("NoRetorno");
@@ -309,33 +309,34 @@ var lexema=""
 se encarca de verificar si es un caracter
  */
     fun esCaracter():Boolean{
+    var filaInicio=filaActual
+    var columnaInicio=columnaActual
+    var posInicial=posicionActual
+    if (caracterActual != '^') {
+        return false;
+    }
         if(caracterActual=='^'){
             var lexema=""
-            var filaInicio=filaActual
-            var columnaInicio=columnaActual
-            var posInicial=posicionActual
             lexema+=caracterActual
             obtenerSiguienteCatacter()
-            var contador=false
+            if (caracterActual.isLetter() || caracterActual.isDigit()) {
 
-            while (contador==true){
                 lexema+=caracterActual
                 obtenerSiguienteCatacter()
-                contador=true
-            }
                 if(caracterActual=='^'){
                     lexema+=caracterActual
                     obtenerSiguienteCatacter()
                     almacenarToken(lexema,Categoria.CARACTER,filaInicio,columnaInicio)
                     return true
                 }
-            else{
+                else{
                     hacerBT(posInicial,filaInicio,columnaInicio)
                     return false
                 }
+            }
+            }
 
-        }
-return false
+    return false
     }
 
     /*

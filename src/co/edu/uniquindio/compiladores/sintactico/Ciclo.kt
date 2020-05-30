@@ -1,5 +1,8 @@
 package co.edu.uniquindio.compiladores.sintactico
 
+import co.edu.uniquindio.compiladores.lexico.Error
+import co.edu.uniquindio.compiladores.semantica.Simbolo
+import co.edu.uniquindio.compiladores.semantica.TablaSimbolos
 import javafx.scene.control.TreeItem
 
 class Ciclo(var expresion: Expresion,var lista:ArrayList<Sentencia>):Sentencia() {
@@ -18,5 +21,28 @@ class Ciclo(var expresion: Expresion,var lista:ArrayList<Sentencia>):Sentencia()
 
         raiz.children.add(raizSentencias)
         return raiz
+    }
+
+    override fun llenarTablaSimbolos(tablaSimbolos: TablaSimbolos, listaErrores: ArrayList<Error>, ambito: String) {
+        for (s in lista){
+            s.llenarTablaSimbolos(tablaSimbolos,listaErrores,ambito)
+        }
+    }
+
+    override fun analizarSemantica(tablaSimbolos: TablaSimbolos, listaErrores: ArrayList<Error>,simbolo: Simbolo) {
+
+        expresion.analizarSemantica(tablaSimbolos, listaErrores, simbolo)
+        for (s in lista){
+            s.analizarSemantica(tablaSimbolos,listaErrores, simbolo )
+        }
+    }
+
+    override fun getJavaCode():String{
+        var codigo="while("+expresion.getJavaCode()+"){"
+        for(s in lista){
+            codigo+=s.getJavaCode()
+        }
+        codigo+="}"
+        return codigo
     }
 }
